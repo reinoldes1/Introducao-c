@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#pragma warning(disable : 4996).
+
+#define text "Entrada e saida de dados"
 
 int main(int argc, char *argv[]) {
 
@@ -34,5 +37,27 @@ int main(int argc, char *argv[]) {
 	printf("Idade Informada: %d. \n", age);
 	printf("Ano informado: %d. \n", year);
 	printf("Peso informado: %f.\n", peso);
+
+	Sleep(1500);
+
+	printf("%s\n", text);
+
+	int idade = 0;
+	float altura = 0.0;
+	char nome[50] = "";
+
+	printf("\aDigite a sua idade: \n");
+	scanf_s("%d", &idade);
+
+	printf("Digite a sua altura: \n");
+	scanf_s("%f", &altura);
+
+	printf("Digite o seu nome: \n");
+	scanf("%s", &nome);
+
+	printf("Dados informados:\n");
+	printf("Idade: %d. \n", idade);
+	printf("Altura: %.2f.\n", altura);
+	printf("Nome: %s.\n", nome);
 
 }
