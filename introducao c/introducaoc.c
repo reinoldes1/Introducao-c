@@ -20,12 +20,19 @@ int main(int argc, char *argv[]) {
 	Sleep(1500);
 
 	int age = 0;
+	int year = 1950;
+	float peso = 0.0;
 
-	printf("\a\nValor inicial da idade: %d.\n", age);
+	printf("\a\nDigite uma idade e um ano: %d.\n", age);
 
 	printf("Digite uma idade:\n");
-	scanf_s("%d", &age);
+	scanf_s("%d %d", &age, &year);
+
+	printf("\a\nDigite um peso: \n");
+	scanf_s("%f", &peso);
 
 	printf("Idade Informada: %d. \n", age);
+	printf("Ano informado: %d. \n", year);
+	printf("Peso informado: %f.\n", peso);
 
 }
