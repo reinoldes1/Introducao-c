@@ -21,4 +21,7 @@ int main() {
 	else if (m <= 4.0) {
 		printf("Nao tem direito a exame\n");
 	}
+	else {
+		printf("Voce passou!\n");
+	}
 }
