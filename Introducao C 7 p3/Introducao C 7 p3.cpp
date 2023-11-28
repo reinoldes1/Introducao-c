@@ -5,6 +5,8 @@ int main() {
 
 	int v[5];
 	int i;
+	float s = 0;
+
 
 	for (i = 0; i < 5; i++) 
 	{
@@ -16,7 +18,10 @@ int main() {
 
 	for (i = 0; i < 5; i++) 
 	{
-		printf("%d ", v[i]);
+		printf("%d \n", v[i]);
+		s += v[i];
 	}
+
+	printf("Resultado da media: %f\n", s / 5);
 
 }
